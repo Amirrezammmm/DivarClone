@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fa-IR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/images/siteLogo.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/advertisement.css">
+    <title></title>
+</head>
+<body dir="rtl">
+        <header class="nav_bar">
+        <nav class="nav_bar_content">
+            <a href="../../index.html">
+                <img src="../images/siteLogo.svg" alt="لوگوی دیوار" class="image_logo">
+            </a>
+            <hr class="kt_divider_vertical">
+            <div class="tooltip_trigger">
+                <button class="tooltip_button" onclick="renderModal()">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span class="tooltip_text"></span>
+                </button>
+                <div class="modal" id="myModal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal(event, true)">&times;</span>
+                        <div class="modal-title">
+                            <h4>انتخاب شهر</h4>
+                        </div>
+                        <div class="moadal-cities">
+                            <ul class="modal-cities-ul">
+                                <li class="modal-cities-item">تهران</li>
+                                <li class="modal-cities-item">مشهد</li>
+                                <li class="modal-cities-item">کرج</li>
+                                <li class="modal-cities-item">شیراز</li>
+                                <li class="modal-cities-item">اصفهان</li>
+                                <li class="modal-cities-item">اهواز</li>
+                                <li class="modal-cities-item">تبریز</li>
+                                <li class="modal-cities-item">کرمانشاه</li>
+                                <li class="modal-cities-item">قم</li>
+                                <li class="modal-cities-item">رشت</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-bar__category-mega-box">
+                <div class="dropdown-menu">
+                    <button class="dropdown_button">
+                        دسته ها
+                        <i class="fa-solid fa-angle-down dropdown_i"></i>
+                    </button>
+                </div>
+                <div class="nav-bar__search-container">
+                    <div class="search_text_field">
+                        <div class="text_field">
+                            <form action="" class="search_bar">
+                                <input type="text" class="search_input" autocomplete="off" placeholder="جستجو در همه آگهی ها">
+                            </form>
+                            <i class="fa-solid fa-magnifying-glass search_i"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav_bar_end_section">
+                    <div class="my_divar">
+                        <button class="my_divar_button">
+                            <span class="my_divar_dropdown"></span>
+                            <i class="fa-regular fa-user myDivarIcon"></i>
+                            <span class="my_divar_text">دیوار من</span>
+                        </button>
+                    </div>
+                    <a href="#" class="call">
+                        <i class="fa-regular fa-comment call_icon"></i>
+                        <span class="call_text">چت و تماس</span>
+                    </a>
+                    <div class="support">
+                        <button class="support_button">
+                            <i class="fa-solid fa-life-ring support_icon"></i>
+                            <span class="support_text">پشتیبانی</span>
+                        </button>
+                    </div>
+                    <button class="Advertisement">
+                        <span class="Advertisement_text">ثبت آگهی</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="main_container">
+        <main>
+            <nav class="breadcrumbs"></nav>
+            <article>
+                <div class="main_row">
+                    <div class="main_col_5">
+                        <section>
+                            <div class="col_page_title">
+                                <div class="col_page_title__texts">
+                                    <div class="col_page_h1_title"></div>
+                                    <div class="col_page_subtitle">۳ روز پیش در </div>
+                                </div>
+                            </div>
+                            <hr class="kt_divider">
+                            <button class="danger">
+                                <div class="bt_selector_row">
+                                    <div class="bt_base_row">
+                                        <div class="base_row_start">
+                                            <i class="fa-solid fa-triangle-exclamation kt_icon"></i>
+                                            <div class="base_selector_row_start">
+                                                <p class="base_selector_row_title">زنگ خطر های قبل از معامله</p>
+                                            </div>
+                                        </div>
+                                        <div class="base_row_end">
+                                            <i class="fa-solid fa-angle-left end_icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="kt_divider">
+                            </button>
+                            <div class="post_action">
+                                <button class="bt_info">
+                                    <span class="bt_info_text">اطلاعات تماس</span>
+                                </button>
+                                <button class="bt_chat">
+                                    <span class="bt_chat_text">چت</span>
+                                </button>
+                                <div class="post_action_bookmark_btn">
+                                    <button class="bookmark_btn">
+                                        <i class="fa-regular fa-bookmark bookmark_icon"></i>
+                                    </button>
+                                </div>
+                                <div class="post_action_share_btn">
+                                    <div class="post_share">
+                                        <button class="post_share_btn">
+                                            <i class="fa-solid fa-share-nodes share_icon"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="price_container">
+                                <div class="price_start">
+                                    <p class="price_title">قیمت</p>
+                                </div>
+                                <div class="price_end">
+                                    <p class="price_value"></p>
+                                </div>
+                            </div>
+                            <section class="post_page_paddle">
+                                <div class="post_page_section">
+                                    <div class="paddle_title">
+                                        <div class="paddle_title_row">
+                                            <h2 class="h2_description_title">توضیحات</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="description_post">
+                                <div class="base_description">
+                                    <p class="description_text"></p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="main_col_6">
+                        <div class="keen_slider">
+                            <figure class="kt_base_carousel">
+                                <div class="kt_base_carousel__image">
+                                    <picture class="kt_image_block">
+                                        <img src="#" alt="" class="kt_image">
+                                    </picture>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </main>
+    </div>
+</body>
+    <script src="../js/advertisement.js"></script>
+</html>

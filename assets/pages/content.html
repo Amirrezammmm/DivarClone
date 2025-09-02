@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fa-IR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/content.css">
+    <link rel="icon" type="image/x-icon" href="/assets/images/siteLogo.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title> دیوار - آگهی ها</title>
+</head>
+<body dir="rtl">
+    <header class="nav_bar">
+        <nav class="nav_bar_content">
+            <a href="../../index.html">
+                <img src="../images/siteLogo.svg" alt="لوگوی دیوار" class="image_logo">
+            </a>
+            <hr class="kt_divider_vertical">
+            <div class="tooltip_trigger">
+                <button class="tooltip_button" onclick="renderModal()">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span class="tooltip_text"></span>
+                </button>
+                <div class="modal" id="myModal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal(event, true)">&times;</span>
+                        <div class="modal-title">
+                            <h4>انتخاب شهر</h4>
+                        </div>
+                        <div class="moadal-cities">
+                            <ul class="modal-cities-ul">
+                                <li class="modal-cities-item">تهران</li>
+                                <li class="modal-cities-item">مشهد</li>
+                                <li class="modal-cities-item">کرج</li>
+                                <li class="modal-cities-item">شیراز</li>
+                                <li class="modal-cities-item">اصفهان</li>
+                                <li class="modal-cities-item">اهواز</li>
+                                <li class="modal-cities-item">تبریز</li>
+                                <li class="modal-cities-item">کرمانشاه</li>
+                                <li class="modal-cities-item">قم</li>
+                                <li class="modal-cities-item">رشت</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-bar__category-mega-box">
+                <div class="dropdown-menu">
+                    <button class="dropdown_button">
+                        دسته ها
+                        <i class="fa-solid fa-angle-down dropdown_i"></i>
+                    </button>
+                </div>
+                <div class="nav-bar__search-container">
+                    <div class="search_text_field">
+                        <div class="text_field">
+                            <form action="" class="search_bar">
+                                <input type="text" id="searchInput" class="search_input" oninput="searchAd()" autocomplete="off" placeholder="جستجو در همه آگهی ها">
+                            </form>
+                            <i class="fa-solid fa-magnifying-glass search_i"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav_bar_end_section">
+                    <div class="my_divar">
+                        <button class="my_divar_button">
+                            <span class="my_divar_dropdown"></span>
+                            <i class="fa-regular fa-user myDivarIcon"></i>
+                            <span class="my_divar_text">دیوار من</span>
+                        </button>
+                    </div>
+                    <a href="#" class="call">
+                        <i class="fa-regular fa-comment call_icon"></i>
+                        <span class="call_text">چت و تماس</span>
+                    </a>
+                    <div class="support">
+                        <button class="support_button">
+                            <i class="fa-solid fa-life-ring support_icon"></i>
+                            <span class="support_text">پشتیبانی</span>
+                        </button>
+                    </div>
+                    <button class="Advertisement">
+                        <span class="Advertisement_text">ثبت آگهی</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="main_container">
+        <main class="content">
+            <h1 class="seo_headline">انواع آگهی ها و نیازمندی های </h1>
+            <div class="post_list_container">
+                <div class="post_list_content">
+                    
+                </div>
+            </div>
+        </main>
+        <div class="main_aside">
+                <aside>
+                    <ul class="according">
+                        <div class="according_title">دسته ها</div>
+                    </ul>
+                     <ul class="according">
+                            <li class="according_item">
+                                <a href="" class="according_item_link">
+                                    <i class="fa-solid fa-house linked_icon"></i>
+                                    املاک
+                                </a>
+                            </li>
+                            <li class="according_item">
+                                <a href="" class="according_item_link">
+                                    <i class="fa-solid fa-car linked_icon"></i>
+                                    وسایل نقلیه
+                                </a>
+                            </li>
+                            <li class="according_item">
+                                <a href="" class="according_item_link">
+                                    <i class="fa-solid fa-mobile-screen-button linked_icon"></i>
+                                    کالای دیجیتال
+                                </a>
+                            </li>
+                            <li class="according_item">
+                                <a href="" class="according_item_link">
+                                    <i class="fa-solid fa-kitchen-set linked_icon"></i>
+                                    خانه و آشپزخانه
+                                </a>
+                            </li>
+                            <li class="according_item">
+                                <a href="" class="according_item_link">
+                                    <i class="fa-solid fa-clock linked_icon"></i>
+                                    وسایل شخصی
+                                </a>
+                            </li>
+                            <li class="according_item">
+                                <a href="" class="according_item_link">
+                                    <i class="fa-solid fa-puzzle-piece linked_icon"></i>
+                                    سرگرمی و فراغت
+                                </a>
+                            </li>
+                            <li class="according_item">
+                                <a href="" class="according_item_link">
+                                    <i class="fa-solid fa-users linked_icon"></i>
+                                    اجتماعی
+                                </a>
+                            </li>
+                            <li class="according_item">
+                                <a href="" class="according_item_link">
+                                    <i class="fa-solid fa-microphone-lines linked_icon"></i>
+                                    تجهیزات و صنعتی
+                                </a>
+                            </li>
+                            <li class="according_item">
+                                <a href="" class="according_item_link">
+                                    <i class="fa-solid fa-briefcase linked_icon"></i>
+                                    استخدام و کاریابی
+                                </a>
+                            </li>
+                        </ul>
+                        <hr class="kt_divider">
+                        <form action="" class="filter_page">
+                            <div class="toolbox_header">
+                                <button class="toolboxheader_title">
+                                    <i class="fa-solid fa-angle-down down_icon"></i>
+                                    <span class="kt_toolbox_title">محله</span>
+                                </button>
+                            </div>
+                            <hr class="kt_divider">
+                            <div class="toolbox_header">
+                                <button class="toolboxheader_title">
+                                    <i class="fa-solid fa-angle-down down_icon"></i>
+                                    <span class="kt_toolbox_title">قیمت</span>
+                                </button>
+                            </div>
+                            <hr class="kt_divider">
+                            <div class="toolbox_header">
+                                <button class="toolboxheader_title">
+                                    <i class="fa-solid fa-angle-down down_icon"></i>
+                                    <span class="kt_toolbox_title">وضعیت آگهی</span>
+                                </button>
+                            </div>
+                            <hr class="kt_divider">
+                            <div class="toolbox_header">
+                                <button class="toolboxheader_title">
+                                    <i class="fa-solid fa-angle-down down_icon"></i>
+                                    <span class="kt_toolbox_title">افزونه ها</span>
+                                </button>
+                            </div>
+                            <hr class="kt_divider">
+                        </form>   
+                </aside>
+                <footer class="aside_footer">
+                    <nav class="links_one">
+                        <a href="" class="menu_links">درباره دیوار</a>
+                        <a href="" class="menu_links">دریافت برنامه</a>
+                        <a href="" class="menu_links">اتاق خبر</a>
+                        <a href="" class="menu_links">دیوار حرفه ای</a>
+                        <a href="" class="menu_links">گزارش آسیب پذیری</a>
+                        <a href="" class="menu_links">دیواری شو</a>
+                        <a href="" class="menu_links">پشتیبانی و قوانین</a>
+                    </nav>
+                    <nav class="links_two">
+                        <a href="" class="links_link">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="" class="links_link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="" class="links_link">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="" class="links_link">
+                            <i class="fa-solid fa-film"></i>
+                        </a>
+                    </nav>
+                    <div class="enamad">
+                        <a href="" class="enamad_box">
+                            <div class="enamad__image-wrapper">
+                                <img src="../images/logo.png" alt="" class="enamad__image">
+                            </div>
+                        </a>
+                        <a href="" class="enamad_box">
+                            <div class="enamad__image-wrapper">
+                                <img src="../images/download.png" alt="" class="enamad__image">
+                            </div>
+                        </a>
+                        <a href="" class="enamad_box">
+                            <div class="enamad__image-wrapper">
+                                <img src="../images/download2.png" alt="" class="enamad__image">
+                            </div>
+                        </a>
+                    </div>
+                </footer>
+        </div>
+    </div>
+</body>
+    <script src="../js/content.js"></script>
+</html>
