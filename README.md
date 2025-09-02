@@ -61,9 +61,3 @@ The main goals are:
 - Practicing **UI design** inspired by a real-world website  
 - Managing a **multi-page structure**  
 - Practicing **DOM manipulation** and **event handling** in JavaScript  
-
----
-
-## 📸 Demo (Optional)
-You can add screenshots or GIFs of your project demo here.
-
